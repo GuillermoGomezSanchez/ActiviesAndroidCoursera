@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_activities">16dp</dimen>
+    <dimen name="margin_from_title">27dp</dimen>
+    <dimen name="title_ingActivity">21dp</dimen>
+    <dimen name="margin_top_bot">5dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ActivitiesProject</string>
+    <string name="IngBienvenida">Confirmar datos</string>
+    <string name="HintNombre">Nombre</string>
+    <string name="HintTel">Tel:</string>
+    <string name="HintEmail">Email</string>
+    <string name="DecriptionTitle">Descripción</string>
+    <string name="Birthday">Fecha de Nacimiento:</string>
+    <string name="IngButton">Siguiente</string>
+    <string name="EditButton">Editar</string>
+</resources>

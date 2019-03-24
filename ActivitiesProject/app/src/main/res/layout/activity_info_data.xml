@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_activities"
+    tools:context=".InfoData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TituloInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IngBienvenida"
+                android:textSize="@dimen/title_ingActivity"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <TextView
+                android:id="@+id/TVName"
+                android:layout_marginVertical="@dimen/margin_top_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_title"
+                android:text="@string/HintNombre" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin_top_bot"
+                    android:layout_marginTop="@dimen/margin_top_bot"
+                    android:id="@+id/TitleBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Birthday"
+                    android:layout_marginRight="@dimen/margin_top_bot"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/toEditBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_top_bot"
+                    android:layout_marginBottom="@dimen/margin_top_bot"
+                    android:layout_marginTop="@dimen/margin_top_bot"
+                    android:id="@+id/TitleTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HintTel"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/toEditTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="@dimen/margin_top_bot"
+                    android:layout_marginBottom="@dimen/margin_top_bot"
+                    android:layout_marginTop="@dimen/margin_top_bot"
+                    android:id="@+id/TitleEmail"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HintEmail"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/toEditEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="@dimen/margin_top_bot"
+                    android:layout_marginBottom="@dimen/margin_top_bot"
+                    android:layout_marginTop="@dimen/margin_top_bot"
+                    android:id="@+id/TitleDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DecriptionTitle"
+                    />
+                <TextView
+                    android:id="@+id/toEditDescription"
+                    android:lines="4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/EditButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EditButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

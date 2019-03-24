@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_activities"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TILName"
+                android:layout_marginBottom="@dimen/margin_top_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_title"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/IETName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HintNombre" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_marginVertical="@dimen/margin_top_bot"
+                android:id="@+id/TitleBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Birthday"
+                />
+
+            <android.widget.DatePicker
+                android:calendarViewShown="false"
+                android:id="@+id/PBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.widget.DatePicker>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginVertical="@dimen/margin_top_bot"
+                android:id="@+id/TILTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/IETTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HintTel" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginVertical="@dimen/margin_top_bot"
+                android:id="@+id/TILEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/IETEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HintEmail" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_marginVertical="@dimen/margin_top_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DecriptionTitle"/>
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"/>
+
+            <Button
+                android:id="@+id/IngButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IngButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
